@@ -42,6 +42,7 @@
                                                 <constraint firstItem="Rzh-k6-tUq" firstAttribute="leading" secondItem="4yQ-dI-vyQ" secondAttribute="leading" constant="15" id="J6Z-c3-lcB"/>
                                                 <constraint firstItem="Rzh-k6-tUq" firstAttribute="top" secondItem="4yQ-dI-vyQ" secondAttribute="top" constant="1" id="Thu-mq-iI7"/>
                                                 <constraint firstAttribute="bottom" secondItem="Rzh-k6-tUq" secondAttribute="bottom" constant="1" id="aaK-hN-AcW"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Rzh-k6-tUq" secondAttribute="trailing" id="jfR-qh-NGp"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
