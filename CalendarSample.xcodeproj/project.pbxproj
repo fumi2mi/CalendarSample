@@ -13,6 +13,7 @@
 		B36D826A274D2A0E00F6E8D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B36D8268274D2A0E00F6E8D5 /* Main.storyboard */; };
 		B36D826C274D2A1000F6E8D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B36D826B274D2A1000F6E8D5 /* Assets.xcassets */; };
 		B36D826F274D2A1000F6E8D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B36D826D274D2A1000F6E8D5 /* LaunchScreen.storyboard */; };
+		B36D8277274D30AF00F6E8D5 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36D8276274D30AF00F6E8D5 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B36D826B274D2A1000F6E8D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B36D826E274D2A1000F6E8D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B36D8270274D2A1000F6E8D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B36D8276274D30AF00F6E8D5 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,32 @@
 		B36D8261274D2A0E00F6E8D5 /* CalendarSample */ = {
 			isa = PBXGroup;
 			children = (
+				B36D8278274D30BF00F6E8D5 /* View */,
+				B36D8279274D30D800F6E8D5 /* Controller */,
 				B36D8262274D2A0E00F6E8D5 /* AppDelegate.swift */,
 				B36D8264274D2A0E00F6E8D5 /* SceneDelegate.swift */,
-				B36D8266274D2A0E00F6E8D5 /* ViewController.swift */,
-				B36D8268274D2A0E00F6E8D5 /* Main.storyboard */,
 				B36D826B274D2A1000F6E8D5 /* Assets.xcassets */,
 				B36D826D274D2A1000F6E8D5 /* LaunchScreen.storyboard */,
 				B36D8270274D2A1000F6E8D5 /* Info.plist */,
 			);
 			path = CalendarSample;
+			sourceTree = "<group>";
+		};
+		B36D8278274D30BF00F6E8D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B36D8268274D2A0E00F6E8D5 /* Main.storyboard */,
+				B36D8276274D30AF00F6E8D5 /* TableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B36D8279274D30D800F6E8D5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B36D8266274D2A0E00F6E8D5 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B36D8267274D2A0E00F6E8D5 /* ViewController.swift in Sources */,
+				B36D8277274D30AF00F6E8D5 /* TableViewCell.swift in Sources */,
 				B36D8263274D2A0E00F6E8D5 /* AppDelegate.swift in Sources */,
 				B36D8265274D2A0E00F6E8D5 /* SceneDelegate.swift in Sources */,
 			);

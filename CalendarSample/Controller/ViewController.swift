@@ -8,10 +8,12 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "2021年11月"
+
     }
 
 
@@ -23,14 +25,8 @@ extension ViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        if #available(iOS 14.0, *) {
-            var content = cell.defaultContentConfiguration()
-            content.text = "\(indexPath.row + 1)"
-            cell.contentConfiguration = content
-        } else {
-            cell.textLabel?.text = "\(indexPath.row + 1)"
-        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TableViewCell
+        cell.label.text = "\(indexPath.row + 1)"
         return cell
     }
 
