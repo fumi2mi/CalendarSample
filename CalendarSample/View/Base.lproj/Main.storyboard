@@ -28,15 +28,18 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rzh-k6-tUq">
-                                                    <rect key="frame" x="5" y="1" width="42" height="28"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rzh-k6-tUq">
+                                                    <rect key="frame" x="15" y="1" width="28.5" height="28"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="28" id="GCd-Hc-Swk"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Rzh-k6-tUq" firstAttribute="leading" secondItem="4yQ-dI-vyQ" secondAttribute="leading" constant="5" id="J6Z-c3-lcB"/>
+                                                <constraint firstItem="Rzh-k6-tUq" firstAttribute="leading" secondItem="4yQ-dI-vyQ" secondAttribute="leading" constant="15" id="J6Z-c3-lcB"/>
                                                 <constraint firstItem="Rzh-k6-tUq" firstAttribute="top" secondItem="4yQ-dI-vyQ" secondAttribute="top" constant="1" id="Thu-mq-iI7"/>
                                                 <constraint firstAttribute="bottom" secondItem="Rzh-k6-tUq" secondAttribute="bottom" constant="1" id="aaK-hN-AcW"/>
                                             </constraints>
