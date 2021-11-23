@@ -28,25 +28,33 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="23"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rzh-k6-tUq">
-                                                    <rect key="frame" x="15" y="1" width="28.5" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="28" id="GCd-Hc-Swk"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="97h-G7-wLa">
+                                                    <rect key="frame" x="15" y="1" width="62" height="21"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rzh-k6-tUq">
+                                                            <rect key="frame" x="0.0" y="0.0" width="28.5" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUY-rM-U15">
+                                                            <rect key="frame" x="33.5" y="0.0" width="28.5" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Rzh-k6-tUq" firstAttribute="leading" secondItem="4yQ-dI-vyQ" secondAttribute="leading" constant="15" id="J6Z-c3-lcB"/>
-                                                <constraint firstItem="Rzh-k6-tUq" firstAttribute="top" secondItem="4yQ-dI-vyQ" secondAttribute="top" constant="1" id="Thu-mq-iI7"/>
-                                                <constraint firstAttribute="bottom" secondItem="Rzh-k6-tUq" secondAttribute="bottom" constant="1" id="aaK-hN-AcW"/>
-                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Rzh-k6-tUq" secondAttribute="trailing" id="jfR-qh-NGp"/>
+                                                <constraint firstItem="97h-G7-wLa" firstAttribute="leading" secondItem="4yQ-dI-vyQ" secondAttribute="leading" constant="15" id="0Hq-tc-cyU"/>
+                                                <constraint firstItem="97h-G7-wLa" firstAttribute="top" secondItem="4yQ-dI-vyQ" secondAttribute="top" constant="1" id="9Li-xE-c8M"/>
+                                                <constraint firstAttribute="bottom" secondItem="97h-G7-wLa" secondAttribute="bottom" constant="1" id="tDd-xT-ntr"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="label" destination="Rzh-k6-tUq" id="keg-PB-FbI"/>
+                                            <outlet property="dateLabel" destination="Rzh-k6-tUq" id="keg-PB-FbI"/>
+                                            <outlet property="dayLabel" destination="BUY-rM-U15" id="VSh-WC-xfP"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

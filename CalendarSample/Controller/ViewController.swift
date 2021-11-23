@@ -26,7 +26,8 @@ extension ViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TableViewCell
-        cell.label.text = "\(indexPath.row + 1)"
+        cell.dateLabel.text = "\(indexPath.row + 1)"
+        cell.dayLabel.text = "曜"
         return cell
     }
 
